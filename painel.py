@@ -1,16 +1,3 @@
-"""
-PAINEL — ANA CLARA — MOBILIDADE ATIVA E USO DE BICICLETAS
-=========================================================
-
-Responde à PERGUNTA 3 da persona: quais cidades têm mais mobilidade ativa (bicicleta)?
-Medida principal: % de trabalhadores cujo meio PRINCIPAL é a bicicleta.
-
-Rodar SOZINHO (a partir da pasta do projeto):
-    streamlit run integrante_3_ana_clara/painel.py
-
-No dashboard do grupo, o app.py chama:  carregar_dados()  e  render(dados, filtros)
-"""
-
 import sys
 from pathlib import Path
 
