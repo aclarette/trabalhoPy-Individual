@@ -1,24 +1,3 @@
-"""
-ETL — ANA CLARA — MOBILIDADE ATIVA E USO DE BICICLETAS
-======================================================
-
-Rodar a partir da PASTA DO PROJETO:
-    python -m integrante_3_ana_clara.etl
-
-O que este arquivo faz:
- 1. EXTRAIR   : baixa a tabela 10330 do Censo 2022 no nível MUNICÍPIO (API do SIDRA/IBGE)
-                e a malha (contorno) das UFs, para o mapa (API de malhas do IBGE).
- 2. TRANSFORMAR:
-      - "-" vira 0 (zero no IBGE); "X", "..", "..." viram vazio (NaN), nunca zero;
-      - padroniza município, UF, região, meio de transporte e raça;
-      - remove duplicadas; cria grupo_modal.
- 3. CARREGAR  : salva em dados/.
-
-Bases geradas:
-    dados/transporte_municipio.csv.gz -> 5.570 municípios: pessoas por meio de transporte × raça
-    dados/mapa_uf.geojson             -> contorno das 27 UFs (malha oficial do IBGE)
-"""
-
 import time
 from pathlib import Path
 
