@@ -1,16 +1,3 @@
-"""
-ESTATÍSTICAS — ANA CLARA — MOBILIDADE ATIVA E BICICLETAS
-========================================================
-
-A variável principal é NUMÉRICA e existe para cada município:
-    % de trabalhadores cujo meio PRINCIPAL é a bicicleta
-        numerador   = trabalhadores que vão principalmente de bicicleta
-        denominador = todos os trabalhadores do município (entre quem declarou o meio)
-
-Como cada município é uma observação, calculamos média, mediana, moda, quartis,
-IQR, amplitude, variância, desvio padrão e outliers (regra 1,5 × IQR).
-"""
-
 import numpy as np
 import pandas as pd
 
